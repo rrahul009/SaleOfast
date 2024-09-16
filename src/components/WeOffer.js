@@ -1,8 +1,15 @@
+'use client'
+import { initializeAOS } from '@/utils/Aos_setup';
 import React from 'react';
+import { useEffect } from 'react';
 
 const WeOffer = () => {
+    useEffect(() => {
+        const cleanupAOS = initializeAOS();
+        return cleanupAOS; // Cleanup AOS on unmount
+    }, []);
     return (
-        <div className="p-4 bg-gray-100">
+        <div className="p-4 bg-gray-100" data-aos="zoom-in-up">
             <div className="bg-white p-5 container mx-auto">
                 <h1 className="text-3xl font-bold text-gray-800 mb-2 text-center">What We’re Offering</h1>
                 <p className="text-xl text-gray-700 mb-4 text-center">
@@ -60,7 +67,7 @@ const WeOffer = () => {
                 </div>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mt-5 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mt-5 gap-6" data-aos="zoom-in-up">
                     {/* Card 1 */}
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden p-4">
                         <img

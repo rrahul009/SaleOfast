@@ -1,6 +1,13 @@
+'use client'
+import { initializeAOS } from '@/utils/Aos_setup';
 import React from 'react';
+import { useEffect } from 'react';
 
 const OurServices = () => {
+  useEffect(() => {
+    const cleanupAOS = initializeAOS();
+    return cleanupAOS; // Cleanup AOS on unmount
+}, []);
   const cardContent = [
     {
       title: 'Great Products',
@@ -46,18 +53,18 @@ const OurServices = () => {
 
   return (
     <div className=" bg-gray-100 p-4 mt-5">
-      <div className="container mx-auto">
+      <div className="container mx-auto" >
         {/* Heading */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-6"data-aos="zoom-in-up">
           <h1 className="text-3xl font-bold text-gray-800">Our Exceptional Services</h1>
           <p className="text-md text-gray-600 mt-2">
             Discover the key benefits and features that set our services apart.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 gap-6"data-aos="zoom-in-up">
           {cardContent.map((item, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="zoom-in-up">
               <div
                 className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
               >

@@ -1,8 +1,15 @@
+'use client'
+import { initializeAOS } from '@/utils/Aos_setup';
 import React from 'react';
+import { useEffect } from 'react';
 
 const AboutCompany = () => {
+    useEffect(() => {
+        const cleanupAOS = initializeAOS();
+        return cleanupAOS; // Cleanup AOS on unmount
+    }, []);
   return (
-    <div className="p-2 bg-gray-100">
+    <div className="p-2 bg-gray-100" data-aos="zoom-in-up">
       <div className="bg-white container mx-auto flex flex-col md:flex-row items-center">
         {/* Image Section */}
         <div className="w-full md:w-1/2 p-4">

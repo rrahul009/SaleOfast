@@ -5,8 +5,14 @@ import Slider from 'react-slick';
 // Import slick carousel CSS files
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useEffect } from 'react';
+import { initializeAOS } from '@/utils/Aos_setup';
 
 const OurClient = () => {
+    useEffect(() => {
+        const cleanupAOS = initializeAOS();
+        return cleanupAOS; // Cleanup AOS on unmount
+    }, []);
   // Slider settings
   const settings = {
     dots: false,
@@ -42,7 +48,7 @@ const OurClient = () => {
   };
 
   return (
-    <div className="p-8 bg-gray-100">
+    <div className="p-8 bg-gray-100" data-aos="zoom-in-up">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Clients</h2>
 

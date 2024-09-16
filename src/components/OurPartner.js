@@ -1,12 +1,17 @@
 'use client'
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 
 // Import slick carousel CSS files
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { initializeAOS } from '@/utils/Aos_setup';
 
 const OurPartner = () => {
+    useEffect(() => {
+        const cleanupAOS = initializeAOS();
+        return cleanupAOS; // Cleanup AOS on unmount
+    }, []);
     // Slider settings
     const settings = {
         dots: false,
@@ -42,7 +47,7 @@ const OurPartner = () => {
     };
 
     return (
-        <div className="p-5 bg-gray-100">
+        <div className="p-5 bg-gray-100" data-aos="zoom-in-up">
             <div className="bg-white p-5 container mx-auto text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Partner</h2>
 

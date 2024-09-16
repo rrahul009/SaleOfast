@@ -17,7 +17,7 @@ const Carausel = () => {
         >
             {/* Slide 1 */}
 
-            <div className="relative h-[580px] bg-banner1 bg-cover bg-center flex items-center">
+            <div className="relative h-[580px] bg-banner1 bg-cover bg-center flex items-center" data-aos="zoom-in-up">
 
                 <div className="absolute inset-0 bg-black bg-opacity-20 blur-lg" data-aos="zoom-in-up"></div>
 
