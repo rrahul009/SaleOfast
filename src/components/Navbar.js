@@ -88,7 +88,7 @@ const Navbar = () => {
                 </svg>
               </button>
               {isIndustriesOpen && (
-                <div className="absolute left-0 mt-2 bg-gray-100 text-black rounded shadow-lg" style={{width:'200px'}}>
+                <div className="absolute right-0 left-0 mt-2 bg-white text-black rounded shadow-lg p-5" style={{ width: '200px' }}>
                   <Link href="/industry1" className="block px-4 py-2 hover:bg-gray-200">
                     Industry 1
                   </Link>
@@ -119,7 +119,7 @@ const Navbar = () => {
                 </svg>
               </button>
               {isServiceOpen && (
-                <div className="absolute left-0 mt-2 bg-gray-100 text-black rounded shadow-lg " style={{width:'200px'}}>
+                <div className="absolute left-0 mt-2 bg-white text-black rounded shadow-lg p-5 " style={{ width: '200px' }}>
                   <Link href="/service1" className="block px-8 py-2 hover:bg-gray-200">
                     Service 1 ssssss
                   </Link>
@@ -142,14 +142,24 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Right Links */}
-          <div className="hidden md:flex space-x-4">
-            <Link href="/search" className="text-black px-4 py-2 rounded transition">
-              <p>Search</p>
-            </Link>
+          <div className="hidden md:flex items-center space-x-4">
+            {/* Search Box */}
+            <div className="relative ">
+              <input
+                type="text"
+                placeholder="Search..."
+                className="px-4 py-2  rounded-lg border border-gray-300
+                 focus:outline-none focus:border-gray-500" style={{width:'150px'}}
+              />
+
+            </div>
+
+            {/* Login Link */}
             <Link href="/login" className="text-black hover:bg-gray-600 px-4 py-2 rounded transition">
               <p>Login</p>
             </Link>
           </div>
+
         </div>
 
         {/* Mobile Menu */}
