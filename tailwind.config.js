@@ -17,7 +17,7 @@ module.exports = {
       },
       backgroundImage: {
         'banner1': "url('/banner1.jpg')",
-        'banner2': "url('/banner2.jpg')",
+        'banner2': "url('/slider_one03.jpg')",
         'banner3': "url('/banner3.jpg')",
       },
        

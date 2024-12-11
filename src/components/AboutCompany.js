@@ -32,7 +32,7 @@ const AboutCompany = () => {
           <h1 className="text-3xl font-bold mb-4 text-gray-800">
             About Our Company
           </h1>
-          <p className="text-md text-gray-700 mb-4">
+          <p className="text-xl font-bold text-gray-700 mb-4">
             We are Partner of Your Innovations
           </p>
           <ul className="list-disc text-md  text-gray-700 mb-4 space-y-2 pl-5">
@@ -54,7 +54,7 @@ const AboutCompany = () => {
           </ul>
           <a
             href="/learn-more" // Replace with your actual link
-            className="inline-block mt-4 px-6 py-3 bg-navyblue text-white font-semibold rounded-lg hover:bg-blue-700 transition"
+            className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
           >
             Learn More
           </a>
