@@ -51,8 +51,8 @@ const Navbar = () => {
                   Login
                 </p>
                 <button
-                  style={{ fontSize: '13px' }}
-                  className="hidden md:block mr-3 py-1 px-3 ml-3 mt-1 font-semibold text-black bg-black-600 rounded-lg"
+                  style={{ fontSize: '14px' }}
+                  className="hidden md:block mr-3  py-1 px-3 ml-3 mt-2 font-semibold text-black bg-black-600 rounded-lg"
                 >
                   Contact Us: 7017738564
                 </button>

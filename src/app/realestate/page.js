@@ -14,7 +14,7 @@ const page = () => {
                         alt="retails"
                         className="w-full h-72 sm:h-72 object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent flex items-center justify-center">
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-transparent flex items-center justify-center">
                         <h1 className="text-3xl sm:text-5xl font-bold text-white text-center px-6 drop-shadow-lg">
                         Empowering Retail Success with Smarter Tools
                         </h1>
@@ -113,124 +113,103 @@ const page = () => {
 
 
             {/* Solutions Designed for Real Estate */}
-            <section className="py-12 px-6 sm:px-12 bg-gray-50">
-                {/* Heading */}
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4">
-                        Solutions Designed for Real Estate
-                    </h2>
-                    <p className="text-lg sm:text-xl text-gray-600">
-                        Integrated Solutions Tailored for Real Estate Success
-                    </p>
-                </div>
+            <section className="py-16 px-6 sm:px-12 bg-gradient-to-b from-gray-50 to-gray-100">
+    {/* Heading */}
+    <div className="text-center mb-16">
+        <h2 className="text-5xl sm:text-6xl font-extrabold text-gray-800 mb-6">
+            Solutions Designed for Real Estate
+        </h2>
+        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+            Integrated Solutions Tailored for Real Estate Success
+        </p>
+    </div>
 
-                {/* Content Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-                    {/* CRM for Real Estate */}
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                        <img
-                            src="realestatecrm.jpg"
-                            alt="CRM for Real Estate"
-                            className="w-full h-64 object-cover rounded-md mb-4"
-                        />
-                        <h3 className="text-xl font-bold text-blue-600 mb-2">
-                            CRM for Real Estate
-                        </h3>
-                        <p className="text-gray-700 mb-4">
-                            Turn Prospects into Homeowners with Smarter CRM Tools. Simplify real estate transactions with tools designed for lead management, tracking opportunities, and maintaining client relationships.
-                        </p>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>
-                                <strong>Lead Management:</strong> Capture and prioritize potential buyers effectively.
-                            </li>
-                            <li>
-                                <strong>Opportunity Management:</strong> Track property inquiries and follow-ups.
-                            </li>
-                            <li>
-                                <strong>Account Management:</strong> Organize client information for long-term relationships.
-                            </li>
-                            <li>
-                                <strong>Task/Event Management:</strong> Plan property visits and meetings seamlessly.
-                            </li>
-                            <li>
-                                <strong>Target vs Achievement:</strong> Monitor and achieve sales objectives with real-time insights.
-                            </li>
-                        </ul>
-                    </div>
+    {/* Content Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        {/* CRM for Real Estate */}
+        <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-transparent hover:border-blue-200">
+            <img
+                src="realestatecrm.jpg"
+                alt="CRM for Real Estate"
+                className="w-full h-64 object-cover rounded-md mb-6"
+            />
+            <h3 className="text-2xl font-bold text-blue-600 mb-4">
+                CRM for Real Estate
+            </h3>
+            <p className="text-gray-700 mb-6">
+                Turn Prospects into Homeowners with Smarter CRM Tools. Simplify real estate transactions with tools designed for lead management, tracking opportunities, and maintaining client relationships.
+            </p>
+            <ul className="list-disc list-inside space-y-4 text-gray-700">
+                <li><span className="font-semibold">Lead Management:</span> Capture and prioritize potential buyers effectively.</li>
+                <li><span className="font-semibold">Opportunity Management:</span> Track property inquiries and follow-ups.</li>
+                <li><span className="font-semibold">Account Management:</span> Organize client information for long-term relationships.</li>
+                <li><span className="font-semibold">Task/Event Management:</span> Plan property visits and meetings seamlessly.</li>
+                <li><span className="font-semibold">Target vs Achievement:</span> Monitor and achieve sales objectives with real-time insights.</li>
+            </ul>
+        </div>
 
-                    {/* Distributor Management System */}
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                        <img
-                            src="realstatedms.jpg"
-                            alt="Distributor Management System"
-                            className="w-full h-64 object-cover rounded-md mb-4"
-                        />
-                        <h3 className="text-xl font-bold text-blue-600 mb-2">
-                            Distributor Management System (DMS)
-                        </h3>
-                        <p className="text-gray-700 mb-4">
-                            Seamless Coordination Across Real Estate Supply Chains. Enhance collaboration with brokers and distributors, ensuring smooth property transactions and promotional efforts.
-                        </p>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>
-                                <strong>Distributor Management:</strong> Foster strong partnerships with distributors and agents.
-                            </li>
-                            <li>
-                                <strong>Order Management:</strong> Streamline purchase agreements and property bookings.
-                            </li>
-                            <li>
-                                <strong>Account Return Management:</strong> Efficiently manage cancellations or refunds.
-                            </li>
-                            <li>
-                                <strong>Discount/Scheme Management:</strong> Offer attractive schemes to boost property sales.
-                            </li>
-                        </ul>
-                    </div>
+        {/* Distributor Management System */}
+        <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-transparent hover:border-blue-200">
+            <img
+                src="realstatedms.jpg"
+                alt="Distributor Management System"
+                className="w-full h-64 object-cover rounded-md mb-6"
+            />
+            <h3 className="text-2xl font-bold text-blue-600 mb-4">
+                Distributor Management System (DMS)
+            </h3>
+            <p className="text-gray-700 mb-6">
+                Seamless Coordination Across Real Estate Supply Chains. Enhance collaboration with brokers and distributors, ensuring smooth property transactions and promotional efforts.
+            </p>
+            <ul className="list-disc list-inside space-y-4 text-gray-700">
+                <li><span className="font-semibold">Distributor Management:</span> Foster strong partnerships with distributors and agents.</li>
+                <li><span className="font-semibold">Order Management:</span> Streamline purchase agreements and property bookings.</li>
+                <li><span className="font-semibold">Account Return Management:</span> Efficiently manage cancellations or refunds.</li>
+                <li><span className="font-semibold">Discount/Scheme Management:</span> Offer attractive schemes to boost property sales.</li>
+            </ul>
+        </div>
 
-                    {/* Channel Partner Management */}
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                        <img
-                            src="realestatechannelpartner.jpg"
-                            alt="Channel Partner Management"
-                            className="w-full h-64 object-cover rounded-md mb-4"
-                        />
-                        <h3 className="text-xl font-bold text-blue-600 mb-2">
-                            Channel Partner Management
-                        </h3>
-                        <p className="text-gray-700 mb-4">
-                            Strengthen Partnerships, Drive Sales. Engage and reward your real estate channel partners with effective management tools.
-                        </p>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>
-                                <strong>Lead Management:</strong> Empower channel partners to generate and manage leads.
-                            </li>
-                            <li>
-                                <strong>Bonus Management:</strong> Incentivize partners with streamlined bonus tracking.
-                            </li>
-                        </ul>
-                    </div>
+        {/* Channel Partner Management */}
+        <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-transparent hover:border-blue-200">
+            <img
+                src="realestatechannelpartner.jpg"
+                alt="Channel Partner Management"
+                className="w-full h-64 object-cover rounded-md mb-6"
+            />
+            <h3 className="text-2xl font-bold text-blue-600 mb-4">
+                Channel Partner Management
+            </h3>
+            <p className="text-gray-700 mb-6">
+                Strengthen Partnerships, Drive Sales. Engage and reward your real estate channel partners with effective management tools.
+            </p>
+            <ul className="list-disc list-inside space-y-4 text-gray-700">
+                <li><span className="font-semibold">Lead Management:</span> Empower channel partners to generate and manage leads.</li>
+                <li><span className="font-semibold">Bonus Management:</span> Incentivize partners with streamlined bonus tracking.</li>
+            </ul>
+        </div>
 
-                    {/* Mobile App */}
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                        <img
-                            src="retailmobileapp.jpg"
-                            alt="Mobile App"
-                            className="w-full h-64 object-cover rounded-md mb-4"
-                        />
-                        <h3 className="text-xl font-bold text-blue-600 mb-2">
-                            Mobile App
-                        </h3>
-                        <p className="text-gray-700 mb-4">
-                            Real Estate Operations on the Go. Take SaleoFast’s real estate solutions wherever you go, ensuring efficiency and connectivity at every step.
-                        </p>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>Access all tools in one user-friendly platform.</li>
-                            <li>Real-time data insights for better decision-making.</li>
-                            <li>Seamless communication between teams and clients.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+        {/* Mobile App */}
+        <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-transparent hover:border-blue-200">
+            <img
+                src="retailmobileapp.jpg"
+                alt="Mobile App"
+                className="w-full h-64 object-cover rounded-md mb-6"
+            />
+            <h3 className="text-2xl font-bold text-blue-600 mb-4">
+                Mobile App
+            </h3>
+            <p className="text-gray-700 mb-6">
+                Real Estate Operations on the Go. Take SaleoFast’s real estate solutions wherever you go, ensuring efficiency and connectivity at every step.
+            </p>
+            <ul className="list-disc list-inside space-y-4 text-gray-700">
+                <li>Access all tools in one user-friendly platform.</li>
+                <li>Real-time data insights for better decision-making.</li>
+                <li>Seamless communication between teams and clients.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 
 
 

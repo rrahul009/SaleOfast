@@ -7,36 +7,36 @@ const page = () => {
     return (
         <>
             <Navbar />
-            <section className=" px-6 sm:px-12  ">
+            <section className="   ">
                 {/* Hero Section */}
-            <section className="relative py-8 px-6 sm:px-12 ">
-                <div className="relative rounded-lg shadow-lg overflow-hidden">
-                    <img
-                        src="/media2.png"
-                        alt="CRM"
-                        className="w-full h-72 sm:h-72 object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent flex items-center justify-center">
-                        <h1 className="text-3xl sm:text-5xl font-bold text-white text-center px-6 drop-shadow-lg">
-                        Empowering Media Sales with Smarter Tools and
-                        </h1>
-                    </div>
-                </div>
-                
-            </section>
+                <section className="relative py-8">
+  <div className="relative rounded-sm shadow-lg overflow-hidden">
+    <img
+      src="/media2.png"
+      alt="CRM"
+      className="w-full h-72 sm:h-72 object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/20 to-transparent flex items-center justify-center">
+      <h1 className="text-3xl sm:text-5xl font-bold text-white text-center px-6 drop-shadow-lg">
+        Empowering Media Sales with Smarter Tools
+      </h1>
+    </div>
+  </div>
+</section>
 
-            {/* Empowering Media Sales Section */}
-            <section className="py-3 px-6 sm:px-12 ">
-                <div className="max-w-6xl mx-auto text-center">
-                    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-gray-800 leading-tight">
-                        Empowering Media Sales with Smarter Tools and
-                        <span className="text-blue-600 block mt-2">Seamless Integration</span>
-                    </h2>
-                    <p className="text-lg sm:text-xl text-gray-800 mt-6 max-w-4xl mx-auto">
-                        From <span className="text-blue-600 font-bold">campaign management</span> to field sales optimization, SaleoFast transforms how media businesses sell, manage, and thrive in a competitive landscape.
-                    </p>
-                </div>
-            </section>
+
+                {/* Empowering Media Sales Section */}
+                <section className="py-3 px-6 sm:px-12 ">
+                    <div className="max-w-6xl mx-auto text-center">
+                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-gray-800 leading-tight">
+                            Empowering Media Sales with Smarter Tools and
+                            <span className="text-blue-600 block mt-2">Seamless Integration</span>
+                        </h2>
+                        <p className="text-lg sm:text-xl text-gray-800 mt-6 max-w-4xl mx-auto">
+                            From <span className="text-blue-600 font-bold">campaign management</span> to field sales optimization, SaleoFast transforms how media businesses sell, manage, and thrive in a competitive landscape.
+                        </p>
+                    </div>
+                </section>
 
                 {/* Call-to-Action */}
                 {/* <div className="mt-12 mb-8 text-center">
