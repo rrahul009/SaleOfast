@@ -7,7 +7,22 @@ const page = () => {
     return (
         <>
             <Navbar />
-            <section className=" py-12 px-6 sm:px-12">
+            <section className="relative py-4 mt-6 px-6 sm:px-12 ">
+                <div className="relative rounded-lg shadow-lg overflow-hidden">
+                    <img
+                        src="/retailapp.jpg"
+                        alt="retails"
+                        className="w-full h-72 sm:h-72 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent flex items-center justify-center">
+                        <h1 className="text-3xl sm:text-5xl font-bold text-white text-center px-6 drop-shadow-lg">
+                        Empowering Retail Success with Smarter Tools
+                        </h1>
+                    </div>
+                </div>
+                
+            </section>
+            <section className="  px-6 sm:px-12">
                 <div className="max-w-6xl mx-auto text-center">
                     {/* Heading */}
                     <p className="text-2xl sm:text-5xl font-extrabold text-black leading-tight tracking-tight mb-12 mt-6">
@@ -68,7 +83,7 @@ const page = () => {
                     {/* Image Section */}
                     <div className="flex justify-center">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Retail-250.jpg"
+                            src="retail.jpg"
                             alt="Retail Transformation"
                             className="rounded-lg shadow-lg object-cover"
                             style={{ height: '300px' }}
@@ -100,7 +115,7 @@ const page = () => {
                     {/* CRM for Retail */}
                     <div className="bg-white rounded-lg shadow-lg p-6">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/CRM-250.jpg"
+                            src="/crmretails.jpg"
                             alt="CRM for Retail"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -119,7 +134,7 @@ const page = () => {
                     {/* Distributor Management System */}
                     <div className="bg-white rounded-lg shadow-lg p-6">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/DMS-250.jpg"
+                            src="retailsdms.jpg"
                             alt="Distributor Management System"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -140,7 +155,7 @@ const page = () => {
                     {/* Field Sales App */}
                     <div className="bg-white rounded-lg shadow-lg p-6 ">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/SFA-250-1.png"
+                            src="retailsfieldsapp.jpg"
                             alt="Field Sales App"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -161,7 +176,7 @@ const page = () => {
                     {/* Retailer App */}
                     <div className="bg-white rounded-lg shadow-lg p-6">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Retail-250.jpg"
+                            src="retailerapp.jpg"
                             alt="Retailer App"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -180,7 +195,7 @@ const page = () => {
                     {/* Channel Partner Management */}
                     <div className="bg-white rounded-lg shadow-lg p-6">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Channel-250-1.png"
+                            src="channelpartnerapp.jpg"
                             alt="Channel Partner Management"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -199,7 +214,7 @@ const page = () => {
                     {/* Mobile App */}
                     <div className="bg-white rounded-lg shadow-lg p-6">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Mobile-250-1.png"
+                            src="retailmobileapp.jpg"
                             alt="Mobile App"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />

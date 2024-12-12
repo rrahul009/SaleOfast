@@ -7,6 +7,21 @@ const page = () => {
     return (
         <>
             <Navbar />
+            <section className="relative py-4 mt-6 px-6 sm:px-12 ">
+                <div className="relative rounded-lg shadow-lg overflow-hidden">
+                    <img
+                        src="/pharma.jpg"
+                        alt="retails"
+                        className="w-full h-72 sm:h-72 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent flex items-center justify-center">
+                        <h1 className="text-3xl sm:text-5xl font-bold text-white text-center px-6 drop-shadow-lg">
+                            Empowering Pharmaceutical Success with Smarter Tools
+                        </h1>
+                    </div>
+                </div>
+
+            </section>
             <section className=" py-12 px-6 sm:px-12">
                 <div className="max-w-6xl mx-auto text-center">
                     {/* Heading */}
@@ -28,11 +43,11 @@ const page = () => {
 
                 {/* Call-to-Action */}
                 <div className="mt-12 text-center">
-                <Link href="/contactus">
-                <button className="px-8 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md transition-all duration-300">
-                        Explore Pharma Solutions
-                    </button>
-                </Link>
+                    <Link href="/contactus">
+                        <button className="px-8 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md transition-all duration-300">
+                            Explore Pharma Solutions
+                        </button>
+                    </Link>
                 </div>
             </section>
 
@@ -83,9 +98,9 @@ const page = () => {
                     {/* CRM for Real Estate */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/CRM-250.jpg"
-                            alt="CRM for Real Estate"
-                            className="w-full h-64 object-cover rounded-md mb-4"
+                            src="crmpharma.avif"
+                            alt="CRM for Pharma"
+                            className="w-full h-72 object-cover rounded-md mb-4"  // Adjusted height
                         />
                         <h3 className="text-xl font-bold text-blue-600 mb-2">
                             CRM for Pharma
@@ -114,12 +129,13 @@ const page = () => {
                         </ul>
                     </div>
 
+
                     {/* Distributor Management System */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/DMS-250.jpg"
+                            src="dms.jpg"
                             alt="Distributor Management System"
-                            className="w-full h-64 object-cover rounded-md mb-4"
+                            className="w-full h-72 object-cover rounded-md mb-4"
                         />
                         <h3 className="text-xl font-bold text-blue-600 mb-2">
                             Distributor Management System (DMS)
@@ -149,7 +165,7 @@ const page = () => {
                         <img
                             src="https://saleofast.com/wp-content/uploads/2024/11/SFA-250-1.png"
                             alt="Channel Partner Management"
-                            className="w-full h-64 object-cover rounded-md mb-4"
+                            className="w-full h-72 object-cover rounded-md mb-4"  // Adjusted height
                         />
                         <h3 className="text-xl font-bold text-blue-600 mb-2">
                             Field Sales App (FSA)
@@ -159,21 +175,21 @@ const page = () => {
                         </p>
                         <p>Equip your field sales teams with tools to optimize territory coverage, manage inventory, and track sales targets.</p>
                         <p>Benefits:</p>
-                        <ul className="list-disc   space-y-2 text-gray-700">
+                        <ul className="list-disc space-y-2 text-gray-700">
                             <li>
                                 <strong>Beat Planning:</strong> Ensure effective doctor visit schedules and coverage.
                             </li>
                             <li>
-                                <strong>Inventory Management:</strong> Track samples, promotional materials, and product availability
+                                <strong>Inventory Management:</strong> Track samples, promotional materials, and product availability.
                             </li>
                             <li>
                                 <strong>Order Management:</strong> Record and track prescription orders seamlessly.
                             </li>
                             <li>
-                                <strong>Target vs Achievement:</strong>  Motivate reps with real-time performance tracking.
+                                <strong>Target vs Achievement:</strong> Motivate reps with real-time performance tracking.
                             </li>
                             <li>
-                                <strong>Inventory Management:</strong> Track samples, promotional materials, and product availability
+                                <strong>Inventory Management:</strong> Track samples, promotional materials, and product availability.
                             </li>
                             <li>
                                 <strong>Collections:</strong> Simplify payment collections and account reconciliations.
@@ -181,12 +197,13 @@ const page = () => {
                         </ul>
                     </div>
 
+
                     {/*  Retailer App */}
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Retail-250.jpg"
+                            src="retailsdms.jpg"
                             alt="Mobile App"
-                            className="w-full h-64 object-cover rounded-md mb-4"
+                            className="w-full h-72 object-cover rounded-md mb-4"
                         />
                         <h3 className="text-xl font-bold text-blue-600 mb-2">
                             Retailer App
@@ -218,9 +235,9 @@ const page = () => {
 
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Channel-250-1.png"
+                            src="channelpartnerapp.jpg"
                             alt="Mobile App"
-                            className="w-full h-64 object-cover rounded-md mb-4"
+                            className="w-full h-64 sm:h-64 md:h-72 object-cover rounded-md mb-4"
                         />
                         <h3 className="text-xl font-bold text-blue-600 mb-2">
                             Channel Partner Management
@@ -229,23 +246,22 @@ const page = () => {
                         <p className="text-gray-700 mb-4">
                             Engage and incentivize your channel partners with streamlined management tools.
                         </p>
-                        Benefits:
+                        <p>Benefits:</p>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
                             <li>
                                 <strong>Lead Management:</strong> Enable channel partners to generate new leads.
                             </li>
                             <li>
-                                <strong> Bonus Management :</strong> Reward partners effectively with automated bonus tracking.
+                                <strong>Bonus Management:</strong> Reward partners effectively with automated bonus tracking.
                             </li>
-
-
                         </ul>
                     </div>
+
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Mobile-250-1.png"
+                            src="retailmobileapp.jpg"
                             alt="Mobile App"
-                            className="w-full h-64 object-cover rounded-md mb-4"
+                          className="w-full h-72 sm:h-80 md:h-72 object-cover rounded-md mb-4"
                         />
                         <h3 className="text-xl font-bold text-blue-600 mb-2">
                             Mobile App
@@ -274,66 +290,66 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            
+
 
             <section className="p-12   rounded-lg shadow-lg">
-    <div className="lg:ml-8 mb-8">
-        <h2 className="text-center text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
-            Why Pharma Chooses SaleOFast
-        </h2>
-        <p className="text-start text-xl font-semibold text-gray-600">
-            From Precision to Performance, We’ve Got You Covered
-        </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md">
-            <img 
-                src="https://www.shutterstock.com/image-vector/compliance-vector-icon-isolated-on-600nw-2080715119.jpg" 
-                alt="Compliance Ready" 
-                className="w-20 h-20 mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Compliance Ready</h3>
-            <p className="text-gray-600">
-                Ensure adherence to pharma regulations with our tools.
-            </p>
-        </div>
-        <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md">
-            <img 
-                src="https://thumbs.dreamstime.com/b/seamless-integration-round-ribbon-isolated-label-sign-sticker-193013805.jpg" 
-                alt="Seamless Integration" 
-                className="w-24 h-20 mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Seamless Integration</h3>
-            <p className="text-gray-600">
-                Connect seamlessly with existing ERP systems and processes.
-            </p>
-        </div>
-        <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md">
-            <img 
-                src="https://www.insightdata.co.uk/wp-content/uploads/2017/03/live-data.png" 
-                alt="Real-Time Insights" 
-                className="w-20 h-20 mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Real-Time Insights</h3>
-            <p className="text-gray-600">
-                Leverage analytics for informed decision-making.
-            </p>
-        </div>
-    </div>
-</section>
+                <div className="lg:ml-8 mb-8">
+                    <h2 className="text-center text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                        Why Pharma Chooses SaleOFast
+                    </h2>
+                    <p className="text-start text-xl font-semibold text-gray-600">
+                        From Precision to Performance, We’ve Got You Covered
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md">
+                        <img
+                            src="https://www.shutterstock.com/image-vector/compliance-vector-icon-isolated-on-600nw-2080715119.jpg"
+                            alt="Compliance Ready"
+                            className="w-20 h-20 mb-4"
+                        />
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">Compliance Ready</h3>
+                        <p className="text-gray-600">
+                            Ensure adherence to pharma regulations with our tools.
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md">
+                        <img
+                            src="https://thumbs.dreamstime.com/b/seamless-integration-round-ribbon-isolated-label-sign-sticker-193013805.jpg"
+                            alt="Seamless Integration"
+                            className="w-24 h-20 mb-4"
+                        />
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">Seamless Integration</h3>
+                        <p className="text-gray-600">
+                            Connect seamlessly with existing ERP systems and processes.
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md">
+                        <img
+                            src="https://www.insightdata.co.uk/wp-content/uploads/2017/03/live-data.png"
+                            alt="Real-Time Insights"
+                            className="w-20 h-20 mb-4"
+                        />
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">Real-Time Insights</h3>
+                        <p className="text-gray-600">
+                            Leverage analytics for informed decision-making.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
 
 
-<div className="flex flex-col sm:flex-row justify-between items-center p-6 mt-6 bg-[#070E79] space-y-4 sm:space-y-0 sm:space-x-4">
-        <p className="text-white text-center sm:text-left text-lg sm:text-xl font-bold">
-          Revolutionize Your Sales Process with SaleoFast CRM
-        </p>
-      <Link href="/contactus">
-      <button className="bg-blue-500 py-3 px-6 w-full sm:w-56 rounded-lg text-white text-center font-medium hover:bg-blue-600 transition duration-300">
-          Book a Demo
-        </button>
-      </Link>
-      </div>
+            <div className="flex flex-col sm:flex-row justify-between items-center p-6 mt-6 bg-[#070E79] space-y-4 sm:space-y-0 sm:space-x-4">
+                <p className="text-white text-center sm:text-left text-lg sm:text-xl font-bold">
+                    Revolutionize Your Sales Process with SaleoFast CRM
+                </p>
+                <Link href="/contactus">
+                    <button className="bg-blue-500 py-3 px-6 w-full sm:w-56 rounded-lg text-white text-center font-medium hover:bg-blue-600 transition duration-300">
+                        Book a Demo
+                    </button>
+                </Link>
+            </div>
 
             <Footer />
         </>

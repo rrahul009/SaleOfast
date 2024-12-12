@@ -7,7 +7,22 @@ const page = () => {
     return (
         <>
             <Navbar />
-            <section className=" py-12 px-6 sm:px-12">
+            <section className="relative py-4 mt-6 px-6 sm:px-12 ">
+                <div className="relative rounded-lg shadow-lg overflow-hidden">
+                    <img
+                        src="/realestate.jpg"
+                        alt="retails"
+                        className="w-full h-72 sm:h-72 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent flex items-center justify-center">
+                        <h1 className="text-3xl sm:text-5xl font-bold text-white text-center px-6 drop-shadow-lg">
+                        Empowering Retail Success with Smarter Tools
+                        </h1>
+                    </div>
+                </div>
+                
+            </section>
+            <section className=" py-6 px-6 sm:px-12">
                 <div className="max-w-6xl mx-auto text-center">
                     {/* Heading */}
                     <p className="text-2xl sm:text-5xl font-extrabold text-black leading-tight tracking-tight mb-4">
@@ -18,7 +33,7 @@ const page = () => {
 
 
                     {/* Subheading */}
-                    <p className="text-lg sm:text-md text-black  max-w-4xl mx-auto mt-12">
+                    <p className="text-lg sm:text-md text-black  max-w-4xl mx-auto mt-4">
                         From lead generation to project delivery, SaleoFast transforms every step of your real estate sales journey with innovative tools designed for seamless operations.
                     </p>
                 </div>
@@ -29,7 +44,7 @@ const page = () => {
                 </div> */}
 
                 {/* Call-to-Action */}
-                <div className="mt-12 text-center">
+                <div className="mt-6 text-center">
                 <Link href="contactus">
                 <button className="px-8 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md transition-all duration-300">
                         Explore Real Estate Solutions
@@ -41,21 +56,21 @@ const page = () => {
 
             <section className="py-8 px-6 sm:px-12">
     {/* Heading */}
-    <div className="text-center mb-6">
+    {/* <div className="text-center mb-6">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4">
             The Key to Real Estate Excellence
         </h2>
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Empowering Real Estate Businesses with Cutting-Edge Technology
         </p>
-    </div>
+    </div> */}
 
     {/* Intro Text */}
-    <div className="max-w-4xl mx-auto text-center text-gray-700 leading-relaxed mb-12">
+    {/* <div className="max-w-4xl mx-auto text-center text-gray-700 leading-relaxed mb-12">
         <p className="text-lg sm:text-md">
             The real estate industry is dynamic and competitive, requiring efficient lead management, seamless distributor coordination, and real-time insights for decision-making. SaleoFast offers a suite of tools tailored to meet the unique needs of real estate professionals and businesses.
         </p>
-    </div>
+    </div> */}
 
     {/* Challenges Grid */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -114,7 +129,7 @@ const page = () => {
                     {/* CRM for Real Estate */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/CRM-250.jpg"
+                            src="realestatecrm.jpg"
                             alt="CRM for Real Estate"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -146,7 +161,7 @@ const page = () => {
                     {/* Distributor Management System */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/DMS-250.jpg"
+                            src="realstatedms.jpg"
                             alt="Distributor Management System"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -175,7 +190,7 @@ const page = () => {
                     {/* Channel Partner Management */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Channel-250-1.png"
+                            src="realestatechannelpartner.jpg"
                             alt="Channel Partner Management"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />
@@ -198,7 +213,7 @@ const page = () => {
                     {/* Mobile App */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <img
-                            src="https://saleofast.com/wp-content/uploads/2024/11/Mobile-250-1.png"
+                            src="retailmobileapp.jpg"
                             alt="Mobile App"
                             className="w-full h-64 object-cover rounded-md mb-4"
                         />

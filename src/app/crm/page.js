@@ -44,25 +44,25 @@ const Page = () => {
       title: "Attendance Management",
       description:
         "Attendance management in CRM is designed to track, manage, and report on employee attendance, which can be particularly useful for sales teams, field service teams, and remote employees. Integrating attendance management with a CRM allows companies to monitor employee availability, manage schedules, and ensure accurate time tracking for both in-office and remote workforces. CRM attendance management systems allow employees to check in and check out for the day directly within the CRM, logging their working hours.",
-      logo: "https://officeworks-dcn.sgp1.digitaloceanspaces.com/2023/04/TAMS-logo.jpg"
+      logo: "attendencemang.png"
     },
     {
       title: "Quotation Management",
       description:
         "Quotation management in CRM is the process of generating, sending, tracking, and managing quotes (also known as proposals or estimates) for prospective customers. This function helps sales teams streamline the quote creation process, ensure accuracy, and improve their chances of closing deals by providing timely, tailored quotes. Saleofast provide customizable quote templates that ensure consistency in format, branding, and information across all quotes. Sales reps can pull in product details, pricing, and taxes automatically for accurate, efficient quote creation.",
-      logo: 'https://todaysconveyancer.co.uk/wp-content/uploads/2023/08/Blank-900-x-600-56.jpg'
+      logo: '/quatationmng.png'
     },
     {
       title: "Target vs Achievement",
       description:
         "Target vs. Achievement tracking in CRM is a critical feature for monitoring and analyzing the progress of sales, marketing, or service teams against set goals or quotas. This comparison helps businesses assess team performance, identify trends, and make informed adjustments to strategies. Targets can be set at various levels, including individual, team, department, or company-wide, based on KPIs (e.g., revenue, number of deals closed, new customer acquisitions). As sales or service activities are completed, data is automatically captured in the CRM (e.g., closed deals), providing real-time updates toward target achievement.",
-      logo: 'https://i.pinimg.com/564x/41/36/07/4136072cba5e21eb90c5a0427eaf4082.jpg'
+      logo: '/targetachievement.png'
     },
     {
       title: "Day Planning",
       description:
         "A daily activity report in CRM is a summary of key actions, tasks, and results from a sales rep’s or team’s day. This report provides managers with insights into team productivity, tracks performance against targets, and helps identify trends and areas for improvement. It can cover number of tasks (such as calls, emails, meetings) completed during the day. It also captures the visits at client location and summary of the discussion done at client side. Details of key interactions with high-priority customers or accounts, noting important discussions, requirements, and follow-up actions.",
-      logo: "https://lh6.googleusercontent.com/proxy/usTF3VPKlX5pUyl3lVXBsPBL4vlTfYUU7krSfT6JbY8HMkjMDB8lOQkjzezdDsxUmOS6HHrTNZXPWHmjxw"
+      logo: "dayplanning.png"
     },
   ];
 
@@ -102,60 +102,36 @@ const Page = () => {
     <>
       <Navbar />
       <section className="bg-white">
-        {/* <div className="max-w-6xl mx-auto px-6 lg:px-12 py-12">
-         
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-blue-600 mb-4">
-              Welcome to Saleofast CRM: Your Path to Business Excellence
-            </h1>
-            <p className="text-lg text-gray-700">
-              Transform your business with a CRM tailored for success.
-            </p>
-          </div>
 
-  
-          <div className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Transform the Way You Manage Relationships
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              In today’s competitive business environment, customer relationships are more important than ever. Saleofast CRM is designed to help you manage your customer interactions, streamline your processes, and drive business growth with ease. Using CRM to transform a business creates a competitive edge by enhancing customer engagement, improving internal efficiency, and enabling data-driven strategies that drive growth. By aligning CRM functionality with specific goals, companies can unlock new levels of productivity and foster a culture that puts the customer first.
-            </p>
-            <p className="mt-6 text-gray-700 font-bold">
-              Here’s how Saleofast can empower a business transformation:
-            </p>
-          </div>
-
-          
-          <section className="  rounded-lg mt-5">
-            <div className="max-w-4xl mx-auto px-4 lg:px-8">
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {benefits.map((benefit, index) => (
-                  <li
-                    key={index}
-                    className="bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300"
-                  >
-                    <div className="flex items-center space-x-4">
-                      <span className="w-10 h-10 flex items-center justify-center bg-blue-500 text-white rounded-full font-bold">
-                        {index + 1}
-                      </span>
-                      <span className="text-lg font-medium text-gray-700 flex-1">
-                        {benefit}
-                      </span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-        </section>
-        </div> */}
       </section>
+
+      <section className="relative bg-gray-50">
+        <div className="relative">
+          <img
+            src="/crm.jpg"
+            alt="CRM"
+            className="w-full h-72 object-cover"
+          />
+          {/* Add overlay text */}
+          <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center">
+            <h2 className="text-2xl lg:text-5xl font-bold text-white text-center px-4">
+              Feature Packed CRM for Sales Automation
+            </h2>
+          </div>
+        </div>
+
+        <div className="mt-10 px-4 lg:px-20">
+          <p className="text-center text-lg lg:text-md mb-4 text-gray-700">
+            Empower your sales team with an innovative and intuitive CRM designed to automate workflows,
+            enhance productivity, and deliver exceptional results.
+          </p>
+        </div>
+      </section>
+
 
       <section className=" py-2">
         <div className="max-w-7xl mx-auto px-4 lg:px-10">
-          <h2 className="text-xl lg:text-4xl font-bold text-center text-blue-900 mb-10">
-            Feature Packed CRM for Sales Automation
-          </h2>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div
@@ -275,11 +251,11 @@ const Page = () => {
         <p className="text-white text-center sm:text-left text-lg sm:text-xl font-bold">
           Revolutionize Your Sales Process with SaleoFast CRM
         </p>
-       <Link href="contactus">
-       <button className="bg-blue-500 py-3 px-6 w-full sm:w-56 rounded-lg text-white text-center font-medium hover:bg-blue-600 transition duration-300">
-          Book a Demo
-        </button>
-       </Link>
+        <Link href="contactus">
+          <button className="bg-blue-500 py-3 px-6 w-full sm:w-56 rounded-lg text-white text-center font-medium hover:bg-blue-600 transition duration-300">
+            Book a Demo
+          </button>
+        </Link>
       </div>
 
 

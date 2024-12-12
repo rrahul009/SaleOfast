@@ -40,7 +40,7 @@ const AboutUs = () => {
           </div>
           <div className="lg:w-1/2">
             <img
-              src="https://st2.depositphotos.com/3591429/6006/i/450/depositphotos_60063963-stock-photo-people-discussing-about-us.jpg"
+              src="aboutus.jpg"
               alt="Mission"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform"
             />
